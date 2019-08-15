@@ -18,6 +18,8 @@
 		A000CD88230592700069602C /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A000CD87230592700069602C /* LoginPage.swift */; };
 		A000CD8A230592BB0069602C /* RegisterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A000CD89230592BB0069602C /* RegisterPage.swift */; };
 		A000CD8C230593060069602C /* BindPayPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A000CD8B230593060069602C /* BindPayPage.swift */; };
+		A000CD8E230595160069602C /* FxDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A000CD8D230595160069602C /* FxDefine.swift */; };
+		A000CD90230599C10069602C /* FxGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A000CD8F230599C10069602C /* FxGlobal.swift */; };
 		A02A1E5A22FC6D5600C46CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02A1E5922FC6D5600C46CFD /* AppDelegate.swift */; };
 		A02A1E5C22FC6D5600C46CFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02A1E5B22FC6D5600C46CFD /* ViewController.swift */; };
 		A02A1E5F22FC6D5600C46CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02A1E5D22FC6D5600C46CFD /* Main.storyboard */; };
@@ -56,6 +58,8 @@
 		A000CD87230592700069602C /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		A000CD89230592BB0069602C /* RegisterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPage.swift; sourceTree = "<group>"; };
 		A000CD8B230593060069602C /* BindPayPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindPayPage.swift; sourceTree = "<group>"; };
+		A000CD8D230595160069602C /* FxDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FxDefine.swift; sourceTree = "<group>"; };
+		A000CD8F230599C10069602C /* FxGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FxGlobal.swift; sourceTree = "<group>"; };
 		A02A1E5622FC6D5600C46CFD /* Uber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02A1E5922FC6D5600C46CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A02A1E5B22FC6D5600C46CFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 		A000CD6723058E3C0069602C /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				A000CD8F230599C10069602C /* FxGlobal.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 		A000CD6E23058E900069602C /* Define */ = {
 			isa = PBXGroup;
 			children = (
+				A000CD8D230595160069602C /* FxDefine.swift */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -173,7 +179,6 @@
 		A000CD7023058EB70069602C /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				A02A1E6522FC6D5600C46CFD /* Info.plist */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -248,6 +253,7 @@
 				A000CD6E23058E900069602C /* Define */,
 				A02A1E5922FC6D5600C46CFD /* AppDelegate.swift */,
 				A02A1E5B22FC6D5600C46CFD /* ViewController.swift */,
+				A02A1E6522FC6D5600C46CFD /* Info.plist */,
 			);
 			path = Uber;
 			sourceTree = "<group>";
@@ -410,7 +416,9 @@
 				A000CD8A230592BB0069602C /* RegisterPage.swift in Sources */,
 				A02A1E5C22FC6D5600C46CFD /* ViewController.swift in Sources */,
 				A000CD77230590500069602C /* BaseInfo.swift in Sources */,
+				A000CD8E230595160069602C /* FxDefine.swift in Sources */,
 				A000CD88230592700069602C /* LoginPage.swift in Sources */,
+				A000CD90230599C10069602C /* FxGlobal.swift in Sources */,
 				A000CD7F230591490069602C /* FxRegister.swift in Sources */,
 				A000CD84230591F80069602C /* FxBaseController.swift in Sources */,
 				A02A1E5A22FC6D5600C46CFD /* AppDelegate.swift in Sources */,
@@ -587,6 +595,7 @@
 				INFOPLIST_FILE = Uber/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = www.sunzexin.com.Uber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -603,6 +612,7 @@
 				INFOPLIST_FILE = Uber/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = www.sunzexin.com.Uber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
